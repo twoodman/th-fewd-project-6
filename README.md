@@ -17,7 +17,7 @@ To Do:
 - Replace bg img with svg, make it match original design (covered background of page)
 - Replace logo with SVG (inline) | will be animated later with CSS
 - Page less than 420px remove text from logo & add h1 tag that contains logo text
-- ~~Replace dogs with SVG images of the same size using the <img> tag.~~ ***SEE E.E. REQUIREMENT BELOW***
+- ~~Replace dogs with SVG images of the same size using the img tag.~~ ***SEE E.E. REQUIREMENT BELOW***
 - Change menu icons to svg | keep original image size
 - Change nav menu item SVG and text on hover with CSS
 - Make comments in CSS(?) showing which browsers tested on. Will also put in this README
