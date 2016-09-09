@@ -45,11 +45,22 @@ header nav ul li {
 header h1 {
   line-height: 1em;
 }
+header h1:nth-of-type(1) {
+  display: block;
+  text-transform: uppercase;
+  color: #eaaa7f;
+  margin: 0 auto;
+  font-family: sans-serif;
+  width: 90%;
+}
 header .logo {
   display: block;
   margin: 0 auto;
   width: 140px;
   height: 120px;
+}
+header .st1 {
+  display: none;
 }
 
 main {
@@ -81,4 +92,13 @@ footer {
   margin-top: 100px;
   padding-bottom: 30px;
   color: #ba8058;
+}
+
+@media (min-width: 420px) {
+  header h1:nth-of-type(1) {
+    display: none;
+  }
+  header .st1 {
+    display: block;
+  }
 }
