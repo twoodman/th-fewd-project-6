@@ -42,6 +42,24 @@ header nav ul li {
   display: inline-block;
   margin-right: 20px;
 }
+header nav ul li a {
+  display: inline-block;
+  transform: scale(1.0);
+  transition: all 100ms ease-out;
+  border-bottom: 1px solid transparent;
+}
+header nav ul li a:hover {
+  transform: scale(1.25);
+  color: black;
+  border-bottom: 1px solid black;
+}
+header .nav-icon {
+  width: 15.156px;
+  height: 13px;
+}
+header .nav-icon .st0 {
+  fill: #39add1;
+}
 header h1 {
   line-height: 1em;
 }
