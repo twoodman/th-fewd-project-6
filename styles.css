@@ -1,3 +1,4 @@
+/* GENERAL */
 body {
   margin: 0;
   padding: 0;
@@ -21,14 +22,24 @@ p {
   line-height: 2em;
   text-align: left;
 }
-
-a {
+/* NAVIGATION */
+a svg {
+  width: 13px;
+  height: 13px;
+}
+header a,
+header a .nav-icon,
+header a span {
   text-decoration: none;
   color: #39add1;
+  fill: #39add1;
   font-weight: 700;
 }
-a:hover {
-  color: #111;
+header a:hover,
+header a:hover .nav-icon,
+header a:hover span {
+  fill: #eaaa7f;
+  color: #eaaa7f;
 }
 
 header {
@@ -45,13 +56,12 @@ header nav ul li {
 header nav ul li a {
   display: inline-block;
   transform: scale(1.0);
-  transition: all 100ms ease-out;
-  border-bottom: 1px solid transparent;
+  transition: all 200ms ease-out;
 }
 header nav ul li a:hover {
-  transform: scale(1.25);
+  transform: scale(1.3);
   color: black;
-  border-bottom: 1px solid black;
+  fill: #000000;
 }
 header .nav-icon {
   width: 15.156px;
@@ -60,6 +70,7 @@ header .nav-icon {
 header .nav-icon .st0 {
   fill: #39add1;
 }
+/* LOGO */
 header h1 {
   line-height: 1em;
 }
@@ -80,7 +91,7 @@ header .logo {
 header .st1 {
   display: none;
 }
-
+/* MAIN */
 main {
   padding-top: 50px;
 }
@@ -104,7 +115,7 @@ main li span {
 main li:last-child {
   margin-right: 0;
 }
-
+/* FOOTER */
 footer {
   width: 100%;
   margin-top: 100px;
