@@ -1,0 +1,160 @@
+/* NAVIGATION */
+nav {
+  padding-bottom: 50px;
+  text-align: left;
+  ul li {
+    margin-left: 10px;
+  }
+  ul li,
+  .nav-icon,
+  a {
+    @include single-transition(all, 100ms, ease-out);
+    @include scale(1, 1);
+    display: inline-block;
+    text-decoration: none;
+    color: $color-blue;
+    fill: $color-blue;
+    font-weight: 700;
+    svg {
+      width: 13px;
+      height: 13px;
+    }
+    &:hover,
+    &:hover .nav-icon
+    &:hover a {
+      @include scale(1.1, 1.1);
+      fill: $color-beige1;
+      color: $color-beige1;
+    }
+  }
+}
+/* LOGO */
+header {
+  padding-top: 10px;
+  h1 {
+    line-height: 1em;
+    font-size: $base-font-size + 15;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+  h1:nth-of-type(1) {
+    @include single-transition(opacity, 500ms, ease);
+    display: block;
+    text-transform: uppercase;
+    color: $color-beige1;
+    margin: 0 auto;
+    font-family: $sans-stack;
+    width: 90%;
+    opacity: 1;
+  }
+  .logo {
+    display: block;
+    margin: 0 auto;
+    width: 140px;
+    height: 120px;
+    .logo__circle {
+      fill: $color-beige2;
+    }
+    .logo__text {
+      @include single-transition(opacity, 500ms, ease);
+      opacity: 0;
+      fill: $color-logo-beige2;
+    }
+    .logo__paw {
+      fill: $color-logo-beige3;
+    }
+  }
+}
+/* MAIN */
+main {
+  padding-top: 50px;
+  h2 {
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-size: $base-font-size + 12;
+  }
+  ul {
+    padding: 15px;
+    li {
+      display: inline-block;
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    li svg {
+      width: 170px;
+      height: 170px;
+      margin-bottom: 15px;
+    }
+    li span {
+      color: $color-beige2;
+      margin-left: -40px;
+    }
+  }
+  /* CORGI COLOURS */
+  .corgi__red,
+  .corgi__fawn,
+  .corgi__sable {
+    .st1 {
+      fill: $color-corgi-mouth;
+    }
+    .st2 {
+      fill: $color-corgi-eyesnose;
+    }
+  }
+  .corgi__red {
+    .st0 {
+      fill: $color-corgi-red1;
+    }
+    .st3 {
+      fill: $color-corgi-red2;
+    }
+  }
+  .corgi__fawn {
+    .st0 {
+      fill: $color-corgi-fawn1;
+    }
+    .st3 {
+      fill: $color-corgi-fawn2;
+    }
+  }
+  .corgi__sable {
+    .st0 {
+      fill: $color-corgi-sable1;
+    }
+    .st3 {
+      fill: $color-corgi-sable2;
+    }
+  }
+  .corgi__blacktan {
+    .st0 {
+      fill: $color-corgi-blacktan1;
+    }
+    .st1 {
+      fill: $color-corgi-blacktan2;
+    }
+    .st2 {
+      fill: $color-corgi-mouth;
+    }
+    .st3 {
+      fill: $color-corgi-eyesnose;
+    }
+  }
+}
+/* FOOTER */
+footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  color: $color-beige2;
+}
+
+@media (min-width: 420px) {
+  header h1:nth-of-type(1) {
+    opacity: 0;
+  }
+  header .logo .logo__text {
+    opacity: 1;
+  }
+}

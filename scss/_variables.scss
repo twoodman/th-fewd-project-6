@@ -1,0 +1,38 @@
+// common colours
+$color-black : #111111; // used in text
+$color-white : #ffffff; // used in content bg
+$color-off-white : #edeff0; // used in page bg
+$color-blue : #39add1; // used in nav items default state
+$color-beige1 : #eaaa7f; // used in nav items hover state
+$color-beige2 : #ba8058; // used in lots of stuff, see below
+
+// logo colours
+// $color-beige2 // used in ellipse
+$color-logo-beige2 : #eaaa7f; // used in text
+$color-logo-beige3 : #f4c6a6; // used in paw
+
+// corgi colours
+// text // $color-beige2
+$color-corgi-mouth : #fbfeff; // st1 // mouth (unless blacktan corgi, then its st2)
+$color-corgi-eyesnose : #2d3339; // st2 // eyes/nose (unless blacktan corgi, then st3)
+// red corgi
+$color-corgi-red1 : #ba8058; // st0 // coat
+$color-corgi-red2 : #eaaa7f; // st3 // above eye colour
+// fawn corgi
+$color-corgi-fawn1 : #eaaa7f; // st0 // coat
+$color-corgi-fawn2 : #f4c6a6; // st3 // above eye colour
+//sable corgi
+$color-corgi-sable1 : #844b24; // st0 // coat
+$color-corgi-sable2 : #ba8058; // st3 // above eye colour
+// black & tan corgi
+$color-corgi-blacktan1 : #ba8058; // st0 // ears/above eyes
+$color-corgi-blacktan2 : #52595f; // st1 // coat
+
+// footer colours
+// text // $color-beige2
+
+// font stacks
+$sans-stack : 'Roboto Slab', sans-serif;
+
+// fonts
+$base-font-size : 16px;

@@ -1,0 +1,26 @@
+/* BASE */
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: $sans-stack;
+  font-weight: 300;
+  color: $color-black;
+  background: url('../svgs/background.svg') $color-off-white;
+  background-size: 53px 50px;
+}
+.main {
+  max-width: 960px;
+  background: $color-white;
+  margin: 0 auto;
+  padding: 15px;
+}
+p {
+  max-width: 350px;
+  margin: 35px auto 0;
+  line-height: 2em;
+  text-align: left;
+}
+a {
+  text-decoration: none;
+}

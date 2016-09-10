@@ -1,0 +1,274 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* BASE */
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 300;
+  color: #111111;
+  background: url("../svgs/background.svg") #edeff0;
+  background-size: 53px 50px;
+}
+
+.main {
+  max-width: 960px;
+  background: #ffffff;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+p {
+  max-width: 350px;
+  margin: 35px auto 0;
+  line-height: 2em;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* NAVIGATION */
+nav {
+  padding-bottom: 50px;
+  text-align: left;
+}
+nav ul li {
+  margin-left: 10px;
+}
+nav ul li,
+nav .nav-icon,
+nav a {
+  -moz-transition: all 100ms ease-out;
+  -o-transition: all 100ms ease-out;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  display: inline-block;
+  text-decoration: none;
+  color: #39add1;
+  fill: #39add1;
+  font-weight: 700;
+}
+nav ul li svg,
+nav .nav-icon svg,
+nav a svg {
+  width: 13px;
+  height: 13px;
+}
+nav ul li:hover, nav ul li:hover .nav-icon
+nav ul li:hover a,
+nav .nav-icon:hover,
+nav .nav-icon:hover .nav-icon
+nav ul li:hover a,
+nav a:hover,
+nav a:hover .nav-icon
+nav ul li:hover a, nav ul li:hover .nav-icon
+nav .nav-icon:hover a,
+nav .nav-icon:hover .nav-icon
+nav .nav-icon:hover a,
+nav a:hover .nav-icon
+nav .nav-icon:hover a, nav ul li:hover .nav-icon
+nav a:hover a,
+nav .nav-icon:hover .nav-icon
+nav a:hover a,
+nav a:hover .nav-icon
+nav a:hover a {
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  fill: #eaaa7f;
+  color: #eaaa7f;
+}
+
+/* LOGO */
+header {
+  padding-top: 10px;
+}
+header h1 {
+  line-height: 1em;
+  font-size: 31px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+header h1:nth-of-type(1) {
+  -moz-transition: opacity 500ms ease;
+  -o-transition: opacity 500ms ease;
+  -webkit-transition: opacity 500ms ease;
+  transition: opacity 500ms ease;
+  display: block;
+  text-transform: uppercase;
+  color: #eaaa7f;
+  margin: 0 auto;
+  font-family: "Roboto Slab", sans-serif;
+  width: 90%;
+  opacity: 1;
+}
+header .logo {
+  display: block;
+  margin: 0 auto;
+  width: 140px;
+  height: 120px;
+}
+header .logo .logo__circle {
+  fill: #ba8058;
+}
+header .logo .logo__text {
+  -moz-transition: opacity 500ms ease;
+  -o-transition: opacity 500ms ease;
+  -webkit-transition: opacity 500ms ease;
+  transition: opacity 500ms ease;
+  opacity: 0;
+  fill: #eaaa7f;
+}
+header .logo .logo__paw {
+  fill: #f4c6a6;
+}
+
+/* MAIN */
+main {
+  padding-top: 50px;
+  /* CORGI COLOURS */
+}
+main h2 {
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+main ul {
+  padding: 15px;
+}
+main ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+main ul li:last-child {
+  margin-right: 0;
+}
+main ul li svg {
+  width: 170px;
+  height: 170px;
+  margin-bottom: 15px;
+}
+main ul li span {
+  color: #ba8058;
+  margin-left: -40px;
+}
+main .corgi__red .st1,
+main .corgi__fawn .st1,
+main .corgi__sable .st1 {
+  fill: #fbfeff;
+}
+main .corgi__red .st2,
+main .corgi__fawn .st2,
+main .corgi__sable .st2 {
+  fill: #2d3339;
+}
+main .corgi__red .st0 {
+  fill: #ba8058;
+}
+main .corgi__red .st3 {
+  fill: #eaaa7f;
+}
+main .corgi__fawn .st0 {
+  fill: #eaaa7f;
+}
+main .corgi__fawn .st3 {
+  fill: #f4c6a6;
+}
+main .corgi__sable .st0 {
+  fill: #844b24;
+}
+main .corgi__sable .st3 {
+  fill: #ba8058;
+}
+main .corgi__blacktan .st0 {
+  fill: #ba8058;
+}
+main .corgi__blacktan .st1 {
+  fill: #52595f;
+}
+main .corgi__blacktan .st2 {
+  fill: #fbfeff;
+}
+main .corgi__blacktan .st3 {
+  fill: #2d3339;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  color: #ba8058;
+}
+
+@media (min-width: 420px) {
+  header h1:nth-of-type(1) {
+    opacity: 0;
+  }
+
+  header .logo .logo__text {
+    opacity: 1;
+  }
+}
