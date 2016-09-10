@@ -10,7 +10,7 @@ body {
   background-size: 53px 50px;
 }
 
-#container {
+.main {
   max-width: 960px;
   background: #fff;
   margin: 0 auto;
@@ -23,21 +23,21 @@ p {
   text-align: left;
 }
 /* NAVIGATION */
-a svg {
+nav a svg {
   width: 13px;
   height: 13px;
 }
-header a,
-header a .nav-icon,
-header a span {
+nav a,
+nav a .nav-icon,
+nav a span {
   text-decoration: none;
   color: #39add1;
   fill: #39add1;
   font-weight: 700;
 }
-header a:hover,
-header a:hover .nav-icon,
-header a:hover span {
+nav a:hover,
+nav a:hover .nav-icon,
+nav a:hover span {
   fill: #eaaa7f;
   color: #eaaa7f;
 }
@@ -66,8 +66,6 @@ header nav ul li a:hover {
 header .nav-icon {
   width: 15.156px;
   height: 13px;
-}
-header .nav-icon .st0 {
   fill: #39add1;
 }
 /* LOGO */
@@ -81,6 +79,8 @@ header h1:nth-of-type(1) {
   margin: 0 auto;
   font-family: sans-serif;
   width: 90%;
+  opacity: 1;
+  transition: opacity 500ms ease;
 }
 header .logo {
   display: block;
@@ -88,8 +88,13 @@ header .logo {
   width: 140px;
   height: 120px;
 }
-header .st1 {
-  display: none;
+header .logo .st1 {
+  opacity: 0;
+  fill: #EAAA7F;
+  transition: opacity 500ms ease;
+}
+header .logo .st2 {
+  fill: #F4C6A6;
 }
 /* MAIN */
 main {
@@ -125,9 +130,9 @@ footer {
 
 @media (min-width: 420px) {
   header h1:nth-of-type(1) {
-    display: none;
+    opacity: 0;
   }
-  header .st1 {
-    display: block;
+  header .logo .st1 {
+    opacity: 1;
   }
 }
