@@ -36,7 +36,7 @@
 - ✔️~~Validate HTML/CSS~~ done | first val: all except one error were fill errors, forgot to remove 'padding: 0 auto;' when I was toying around
 
 
-##### Exceeds Expectations:
+##### 🔥🔥Exceeds Expectations🔥🔥: 😄👍
 - ✔️~~Use inline svg for dogs | change colour of dog coats using CSS to match original colours of dogs~~ done
 - ✔️~~Add more css effects | transition effects to menu nav link hover~~ done
 - 🔧 Add more css effects | maybe hover on dogs and they rotate?
