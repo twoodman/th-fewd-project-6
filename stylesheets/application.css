@@ -1,3 +1,12 @@
+/*
+##### Tested In: (everything worked as expected)
+- Chrome v52.0
+- Chrome v53.0 (when it updated as I checked...I don't like 53. It made device toolbar/view really choppy.)
+- Firefox v46
+- Firefox v47 (also after there was an update available when I checked)
+- Microsoft Edge v38.14
+- Internet Explorer v11.0
+*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,6 +63,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/*
+##### Tested In: (everything worked as expected)
+- Chrome v52.0
+- Chrome v53.0 (when it updated as I checked...I don't like 53. It made device toolbar/view really choppy.)
+- Firefox v46
+- Firefox v47 (also after there was an update available when I checked)
+- Microsoft Edge v38.14
+- Internet Explorer v11.0
+*/
+/*##### Tested In: (everything worked as expected)
+- Chrome v52.0
+- Chrome v53.0 (when it updated as I checked...I don't like 53. It made device toolbar/view really choppy.)
+- Firefox v46
+- Firefox v47 (also after there was an update available when I checked)
+- Microsoft Edge v38.14
+- Internet Explorer v11.0
+*/
 /* BASE */
 body {
   margin: 0;
@@ -84,6 +110,15 @@ a {
   text-decoration: none;
 }
 
+/*
+##### Tested In: (everything worked as expected)
+- Chrome v52.0
+- Chrome v53.0 (when it updated as I checked...I don't like 53. It made device toolbar/view really choppy.)
+- Firefox v46
+- Firefox v47 (also after there was an update available when I checked)
+- Microsoft Edge v38.14
+- Internet Explorer v11.0
+*/
 /* NAVIGATION */
 nav {
   padding-bottom: 50px;

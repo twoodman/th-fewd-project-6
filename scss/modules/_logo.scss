@@ -1,0 +1,43 @@
+/* LOGO */
+header {
+  padding-top: 10px;
+  h1 {
+    line-height: 1em;
+    font-size: $base-font-size + 15;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+  h1:nth-of-type(1) {
+    @include single-transition(opacity, 500ms, ease);
+    @include query-420 {
+      opacity: 0;
+    }
+    display: block;
+    text-transform: uppercase;
+    color: $color-beige1;
+    margin: 0 auto;
+    font-family: $sans-stack;
+    width: 90%;
+    opacity: 1;
+  }
+  .logo {
+    display: block;
+    margin: 0 auto;
+    width: 140px;
+    height: 120px;
+    .logo-circle {
+      fill: $color-beige2;
+    }
+    .logo-text {
+      @include single-transition(opacity, 500ms, ease);
+      @include query-420 {
+        opacity: 1;
+      }
+      opacity: 0;
+      fill: $color-logo-beige2;
+    }
+    .logo-paw {
+      fill: $color-logo-beige3;
+    }
+  }
+}

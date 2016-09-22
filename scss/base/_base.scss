@@ -1,4 +1,5 @@
-/*##### Tested In: (everything worked as expected)
+/*
+##### Tested In: (everything worked as expected)
 - Chrome v52.0
 - Chrome v53.0 (when it updated as I checked...I don't like 53. It made device toolbar/view really choppy.)
 - Firefox v46
@@ -8,20 +9,12 @@
 */
 /* BASE */
 body {
-  margin: 0;
-  padding: 0;
   text-align: center;
   font-family: $sans-stack;
   font-weight: 300;
   color: $color-black;
   background: url('../svgs/background.svg') $color-off-white;
   background-size: 53px 50px;
-}
-.main {
-  max-width: 960px;
-  background: $color-white;
-  margin: 0 auto;
-  padding: 15px;
 }
 p {
   max-width: 350px;

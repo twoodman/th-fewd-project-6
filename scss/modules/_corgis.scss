@@ -1,0 +1,49 @@
+/* CORGI COLOURS */
+.corgi__red,
+.corgi__fawn,
+.corgi__sable {
+  .st1 {
+    fill: $color-corgi-mouth;
+  }
+  .st2 {
+    fill: $color-corgi-eyesnose;
+  }
+}
+.corgi__red {
+  .st0 {
+    fill: $color-corgi-red1;
+  }
+  .st3 {
+    fill: $color-corgi-red2;
+  }
+}
+.corgi__fawn {
+  .st0 {
+    fill: $color-corgi-fawn1;
+  }
+  .st3 {
+    fill: $color-corgi-fawn2;
+  }
+}
+.corgi__sable {
+  .st0 {
+    fill: $color-corgi-sable1;
+  }
+  .st3 {
+    fill: $color-corgi-sable2;
+  }
+}
+.corgi__blacktan {
+  .st0 {
+    fill: $color-corgi-blacktan1;
+  }
+  .st1 {
+    fill: $color-corgi-blacktan2;
+  }
+  .st2 {
+    fill: $color-corgi-mouth;
+  }
+  .st3 {
+    fill: $color-corgi-eyesnose;
+  }
+}
