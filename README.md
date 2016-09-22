@@ -40,4 +40,4 @@
 ##### 🔥🔥Exceeds Expectations🔥🔥: 😄👍
 - ✔️~~Use inline svg for dogs | change colour of dog coats using CSS to match original colours of dogs~~ done
 - ✔️~~Add more css effects | transition effects to menu nav link hover~~ done
-- 🔧 Add more css effects | maybe hover on dogs and they rotate?
+- ✔️ ~~Add more css effects | maybe hover on dogs and they rotate?~~ done
