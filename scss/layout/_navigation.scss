@@ -2,24 +2,24 @@
 .site-wrap__nav {
   padding-bottom: 50px;
   text-align: left;
-  .nav__list-item {
-    margin-left: 10px;
+  .nav__list {
+    &-item {
+      margin-left: 10px;
+    }
+    &-item-svg {
+      width: 13px;
+      height: 13px;
+    }
   }
   .nav__list-item,
   .nav__list-item a {
-    @include single-transition(scale, 100ms, ease-out);
-    @include single-transition(fill, 100ms, ease-out);
-    @include single-transition(color, 100ms, ease-out);
+    @include single-transition(all, 100ms, ease-out);
     @include scale(1, 1);
     display: inline-block;
     text-decoration: none;
     color: $color-blue;
     fill: $color-blue;
     font-weight: 700;
-    .nav__list-item-svg {
-      width: 13px;
-      height: 13px;
-    }
     &:hover,
     &:hover a {
       @include scale(1.1, 1.1);

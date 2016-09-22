@@ -72,7 +72,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 - Microsoft Edge v38.14
 - Internet Explorer v11.0
 */
-/*##### Tested In: (everything worked as expected)
+/*
+##### Tested In: (everything worked as expected)
 - Chrome v52.0
 - Chrome v53.0 (when it updated as I checked...I don't like 53. It made device toolbar/view really choppy.)
 - Firefox v46
@@ -82,21 +83,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 */
 /* BASE */
 body {
-  margin: 0;
-  padding: 0;
   text-align: center;
   font-family: "Roboto Slab", sans-serif;
   font-weight: 300;
   color: #111111;
   background: url("../svgs/background.svg") #edeff0;
   background-size: 53px 50px;
-}
-
-.main {
-  max-width: 960px;
-  background: #ffffff;
-  margin: 0 auto;
-  padding: 15px;
 }
 
 p {
@@ -110,26 +102,28 @@ a {
   text-decoration: none;
 }
 
-/*
-##### Tested In: (everything worked as expected)
-- Chrome v52.0
-- Chrome v53.0 (when it updated as I checked...I don't like 53. It made device toolbar/view really choppy.)
-- Firefox v46
-- Firefox v47 (also after there was an update available when I checked)
-- Microsoft Edge v38.14
-- Internet Explorer v11.0
-*/
+/* SITE WRAP */
+.site-wrap {
+  max-width: 960px;
+  background: #ffffff;
+  margin: 0 auto;
+  padding: 15px;
+}
+
 /* NAVIGATION */
-nav {
+.site-wrap__nav {
   padding-bottom: 50px;
   text-align: left;
 }
-nav ul li {
+.site-wrap__nav .nav__list-item {
   margin-left: 10px;
 }
-nav ul li,
-nav .nav-icon,
-nav a {
+.site-wrap__nav .nav__list-item-svg {
+  width: 13px;
+  height: 13px;
+}
+.site-wrap__nav .nav__list-item,
+.site-wrap__nav .nav__list-item a {
   -moz-transition: all 100ms ease-out;
   -o-transition: all 100ms ease-out;
   -webkit-transition: all 100ms ease-out;
@@ -144,36 +138,33 @@ nav a {
   fill: #39add1;
   font-weight: 700;
 }
-nav ul li svg,
-nav .nav-icon svg,
-nav a svg {
-  width: 13px;
-  height: 13px;
-}
-nav ul li:hover, nav ul li:hover .nav-icon
-nav ul li:hover a,
-nav .nav-icon:hover,
-nav .nav-icon:hover .nav-icon
-nav ul li:hover a,
-nav a:hover,
-nav a:hover .nav-icon
-nav ul li:hover a, nav ul li:hover .nav-icon
-nav .nav-icon:hover a,
-nav .nav-icon:hover .nav-icon
-nav .nav-icon:hover a,
-nav a:hover .nav-icon
-nav .nav-icon:hover a, nav ul li:hover .nav-icon
-nav a:hover a,
-nav .nav-icon:hover .nav-icon
-nav a:hover a,
-nav a:hover .nav-icon
-nav a:hover a {
+.site-wrap__nav .nav__list-item:hover, .site-wrap__nav .nav__list-item:hover a,
+.site-wrap__nav .nav__list-item a:hover,
+.site-wrap__nav .nav__list-item a:hover a {
   -moz-transform: scale(1.1, 1.1);
   -ms-transform: scale(1.1, 1.1);
   -webkit-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
   fill: #eaaa7f;
   color: #eaaa7f;
+}
+
+/* MAIN */
+.site-wrap__main {
+  padding-top: 50px;
+}
+.site-wrap__main h2 {
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+/* FOOTER */
+.site-wrap__footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  color: #ba8058;
 }
 
 /* LOGO */
@@ -199,16 +190,35 @@ header h1:nth-of-type(1) {
   width: 90%;
   opacity: 1;
 }
+@media (min-width: 420px) {
+  header h1:nth-of-type(1) {
+    opacity: 0;
+  }
+}
 header .logo {
+  -moz-transition: -moz-transform 200ms ease-out;
+  -o-transition: -o-transform 200ms ease-out;
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  -moz-transform: scale(1, 1) rotate(0deg);
+  -ms-transform: scale(1, 1) rotate(0deg);
+  -webkit-transform: scale(1, 1) rotate(0deg);
+  transform: scale(1, 1) rotate(0deg);
   display: block;
   margin: 0 auto;
   width: 140px;
   height: 120px;
 }
-header .logo .logo__circle {
+header .logo:hover {
+  -moz-transform: scale(1.2, 1.2) rotate(-25deg);
+  -ms-transform: scale(1.2, 1.2) rotate(-25deg);
+  -webkit-transform: scale(1.2, 1.2) rotate(-25deg);
+  transform: scale(1.2, 1.2) rotate(-25deg);
+}
+header .logo .logo-circle {
   fill: #ba8058;
 }
-header .logo .logo__text {
+header .logo .logo-text {
   -moz-transition: opacity 500ms ease;
   -o-transition: opacity 500ms ease;
   -webkit-transition: opacity 500ms ease;
@@ -216,94 +226,103 @@ header .logo .logo__text {
   opacity: 0;
   fill: #eaaa7f;
 }
-header .logo .logo__paw {
+@media (min-width: 420px) {
+  header .logo .logo-text {
+    opacity: 1;
+  }
+}
+header .logo .logo-paw {
   fill: #f4c6a6;
 }
 
-/* MAIN */
-main {
-  padding-top: 50px;
-  /* CORGI COLOURS */
+/* CORGI LIST */
+.corgi-list {
+  width: 100%;
 }
-main h2 {
-  font-weight: 700;
-  margin-bottom: 30px;
-  font-size: 28px;
-}
-main ul {
-  padding: 15px;
-}
-main ul li {
+.corgi-list__item {
+  margin-left: 20px;
   display: inline-block;
-  margin-right: 20px;
 }
-main ul li:last-child {
-  margin-right: 0;
-}
-main ul li svg {
+.corgi-list__item-svg {
   width: 170px;
   height: 170px;
-  margin-bottom: 15px;
+  margin: 0 auto 15px auto;
 }
-main ul li span {
+.corgi-list span {
   color: #ba8058;
   margin-left: -40px;
 }
-main .corgi__red .st1,
-main .corgi__fawn .st1,
-main .corgi__sable .st1 {
+
+/* CORGI TRANSITIONS */
+.corgi__red,
+.corgi__fawn,
+.corgi__sable,
+.corgi__blacktan {
+  -moz-transition: -moz-transform 200ms ease-out;
+  -o-transition: -o-transform 200ms ease-out;
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -moz-transform-origin: 65px 100px;
+  -ms-transform-origin: 65px 100px;
+  -webkit-transform-origin: 65px 100px;
+  transform-origin: 65px 100px;
+}
+.corgi__red:hover,
+.corgi__fawn:hover,
+.corgi__sable:hover,
+.corgi__blacktan:hover {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* CORGI COLOURS */
+.corgi__red .st1,
+.corgi__fawn .st1,
+.corgi__sable .st1 {
   fill: #fbfeff;
 }
-main .corgi__red .st2,
-main .corgi__fawn .st2,
-main .corgi__sable .st2 {
+.corgi__red .st2,
+.corgi__fawn .st2,
+.corgi__sable .st2 {
   fill: #2d3339;
 }
-main .corgi__red .st0 {
+
+.corgi__red .st0 {
   fill: #ba8058;
 }
-main .corgi__red .st3 {
+.corgi__red .st3 {
   fill: #eaaa7f;
 }
-main .corgi__fawn .st0 {
+
+.corgi__fawn .st0 {
   fill: #eaaa7f;
 }
-main .corgi__fawn .st3 {
+.corgi__fawn .st3 {
   fill: #f4c6a6;
 }
-main .corgi__sable .st0 {
+
+.corgi__sable .st0 {
   fill: #844b24;
 }
-main .corgi__sable .st3 {
+.corgi__sable .st3 {
   fill: #ba8058;
 }
-main .corgi__blacktan .st0 {
+
+.corgi__blacktan .st0 {
   fill: #ba8058;
 }
-main .corgi__blacktan .st1 {
+.corgi__blacktan .st1 {
   fill: #52595f;
 }
-main .corgi__blacktan .st2 {
+.corgi__blacktan .st2 {
   fill: #fbfeff;
 }
-main .corgi__blacktan .st3 {
+.corgi__blacktan .st3 {
   fill: #2d3339;
-}
-
-/* FOOTER */
-footer {
-  width: 100%;
-  margin-top: 100px;
-  padding-bottom: 30px;
-  color: #ba8058;
-}
-
-@media (min-width: 420px) {
-  header h1:nth-of-type(1) {
-    opacity: 0;
-  }
-
-  header .logo .logo__text {
-    opacity: 1;
-  }
 }

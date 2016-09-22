@@ -21,10 +21,15 @@ header {
     opacity: 1;
   }
   .logo {
+    @include single-transition(transform, 200ms, ease-out);
+    @include transform(scale(1,1) rotate(0deg));
     display: block;
     margin: 0 auto;
     width: 140px;
     height: 120px;
+    &:hover {
+      @include transform(scale(1.2,1.2) rotate(-25deg));
+    }
     .logo-circle {
       fill: $color-beige2;
     }

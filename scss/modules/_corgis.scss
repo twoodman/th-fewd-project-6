@@ -1,3 +1,32 @@
+/* CORGI LIST */
+.corgi-list {
+  width: 100%;
+   &__item {
+      margin-left: 20px;
+      display: inline-block;
+  }
+  &__item-svg {
+    width: 170px;
+    height: 170px;
+    margin: 0 auto 15px auto;
+  }
+  span {
+    color: $color-beige2;
+    margin-left: -40px;
+  }
+}
+/* CORGI TRANSITIONS */
+.corgi__red,
+.corgi__fawn,
+.corgi__sable,
+.corgi__blacktan {
+  @include single-transition(transform, 200ms, ease-out);
+  @include rotate(0deg);
+  @include transform-origin(65px, 100px);
+  &:hover {
+    @include rotate(-45deg);
+  }
+}
 /* CORGI COLOURS */
 .corgi__red,
 .corgi__fawn,
