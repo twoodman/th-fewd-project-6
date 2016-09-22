@@ -35,6 +35,7 @@
 - ✔️~~👑Refactor Sass/Compass to SMACCS/BEM & use folder convention?~~ done
 - ✔️~~Make comments in CSS(?) showing which browsers tested on. Will also put in this README~~ done
 - ✔️~~Validate HTML/CSS~~ done | first val: all except one error were fill errors, forgot to remove 'padding: 0 auto;' when I was toying around
+- ✔️~~Second HTML/CSS validation after refactor and clean up~~ done | same errors as before, no new ones
 
 
 ##### 🔥🔥Exceeds Expectations🔥🔥: 😄👍
