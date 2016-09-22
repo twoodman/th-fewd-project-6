@@ -32,6 +32,7 @@
 - ✔️~~Menu nav link & hover states: Change nav menu item SVG and text on hover with CSS~~ done
 - ✔️~~👑Only use an ID once, if at all~~ done | removed all IDs
 - ✔️~~👑Refactor to Sass/Compass?~~ done
+- ✔️~~👑Refactor Sass/Compass to SMACCS/BEM & use folder convention?~~ done
 - ✔️~~Make comments in CSS(?) showing which browsers tested on. Will also put in this README~~ done
 - ✔️~~Validate HTML/CSS~~ done | first val: all except one error were fill errors, forgot to remove 'padding: 0 auto;' when I was toying around
 
